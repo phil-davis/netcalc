@@ -39,6 +39,6 @@
 @test "netcalc bare command" {
   regexp="^Usage:[[:blank:]]netcalc"
   run ./netcalc
-  [ $status -eq 0 ]
+  [ $status -eq 1 ]
   [[ ${lines[0]} =~ $regexp ]]
 }
