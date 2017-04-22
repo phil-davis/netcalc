@@ -17,6 +17,7 @@ before_script:
 script:
   - ./autogen.sh
   - ./configure
+  - bash --version
   - make
   - make test
   - bats tests
