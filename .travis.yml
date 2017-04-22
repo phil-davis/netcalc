@@ -1,7 +1,8 @@
 # Travis CI integration
 # Defaults to GNU GCC and autotools: ./configure && make && make test
 language: c
-
+# Use newer beta image to get newer bash
+dist: trusty
 # We don't need to install packages, use dockerized build, quicker
 sudo: false
 
